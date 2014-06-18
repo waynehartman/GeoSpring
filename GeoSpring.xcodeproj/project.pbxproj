@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B00E439719512D4C00DF7219 /* GSGeoJsonImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E439619512D4C00DF7219 /* GSGeoJsonImporter.m */; };
+		B00E439A19512DCD00DF7219 /* GSDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E439919512DCD00DF7219 /* GSDataController.m */; };
+		B00E43AA19513BEC00DF7219 /* GSBasin.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E43A919513BEC00DF7219 /* GSBasin.m */; };
+		B00E43AD19513BEC00DF7219 /* GSSpringLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E43AC19513BEC00DF7219 /* GSSpringLocation.m */; };
+		B00E43B019513BEC00DF7219 /* GSCounty.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E43AF19513BEC00DF7219 /* GSCounty.m */; };
+		B00E43B219513F7200DF7219 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00E43B119513F7200DF7219 /* MapKit.framework */; };
+		B00E43B619513FF000DF7219 /* GSSpringLocation+MapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E43B519513FF000DF7219 /* GSSpringLocation+MapKit.m */; };
 		B091890719512A34009C837D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B091890619512A34009C837D /* Foundation.framework */; };
 		B091890919512A34009C837D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B091890819512A34009C837D /* CoreGraphics.framework */; };
 		B091890B19512A34009C837D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B091890A19512A34009C837D /* UIKit.framework */; };
@@ -22,6 +29,8 @@
 		B091892B19512A35009C837D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B091890A19512A34009C837D /* UIKit.framework */; };
 		B091893319512A35009C837D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B091893119512A35009C837D /* InfoPlist.strings */; };
 		B091893519512A35009C837D /* GeoSpringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B091893419512A35009C837D /* GeoSpringTests.m */; };
+		B091894119512A6A009C837D /* SpringData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B091893F19512A6A009C837D /* SpringData.xcdatamodeld */; };
+		B091894319512CE6009C837D /* springdata.json in Resources */ = {isa = PBXBuildFile; fileRef = B091894219512CE6009C837D /* springdata.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,6 +44,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		B00E439519512D4C00DF7219 /* GSGeoJsonImporter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSGeoJsonImporter.h; sourceTree = "<group>"; };
+		B00E439619512D4C00DF7219 /* GSGeoJsonImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSGeoJsonImporter.m; sourceTree = "<group>"; };
+		B00E439819512DCD00DF7219 /* GSDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDataController.h; sourceTree = "<group>"; };
+		B00E439919512DCD00DF7219 /* GSDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDataController.m; sourceTree = "<group>"; };
+		B00E43A819513BEC00DF7219 /* GSBasin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBasin.h; sourceTree = "<group>"; };
+		B00E43A919513BEC00DF7219 /* GSBasin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBasin.m; sourceTree = "<group>"; };
+		B00E43AB19513BEC00DF7219 /* GSSpringLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSpringLocation.h; sourceTree = "<group>"; };
+		B00E43AC19513BEC00DF7219 /* GSSpringLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSpringLocation.m; sourceTree = "<group>"; };
+		B00E43AE19513BEC00DF7219 /* GSCounty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCounty.h; sourceTree = "<group>"; };
+		B00E43AF19513BEC00DF7219 /* GSCounty.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSCounty.m; sourceTree = "<group>"; };
+		B00E43B119513F7200DF7219 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		B00E43B419513FF000DF7219 /* GSSpringLocation+MapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GSSpringLocation+MapKit.h"; sourceTree = "<group>"; };
+		B00E43B519513FF000DF7219 /* GSSpringLocation+MapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GSSpringLocation+MapKit.m"; sourceTree = "<group>"; };
 		B091890319512A34009C837D /* GeoSpring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoSpring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B091890619512A34009C837D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B091890819512A34009C837D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -55,6 +77,8 @@
 		B091893019512A35009C837D /* GeoSpringTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "GeoSpringTests-Info.plist"; sourceTree = "<group>"; };
 		B091893219512A35009C837D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		B091893419512A35009C837D /* GeoSpringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoSpringTests.m; sourceTree = "<group>"; };
+		B091894019512A6A009C837D /* SpringData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpringData.xcdatamodel; sourceTree = "<group>"; };
+		B091894219512CE6009C837D /* springdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = springdata.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +86,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B00E43B219513F7200DF7219 /* MapKit.framework in Frameworks */,
 				B091890919512A34009C837D /* CoreGraphics.framework in Frameworks */,
 				B091890B19512A34009C837D /* UIKit.framework in Frameworks */,
 				B091890719512A34009C837D /* Foundation.framework in Frameworks */,
@@ -81,6 +106,29 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		B00E439B19512E0100DF7219 /* Managed Objects */ = {
+			isa = PBXGroup;
+			children = (
+				B00E43B319513FD500DF7219 /* Extensions */,
+				B00E43A819513BEC00DF7219 /* GSBasin.h */,
+				B00E43A919513BEC00DF7219 /* GSBasin.m */,
+				B00E43AE19513BEC00DF7219 /* GSCounty.h */,
+				B00E43AF19513BEC00DF7219 /* GSCounty.m */,
+				B00E43AB19513BEC00DF7219 /* GSSpringLocation.h */,
+				B00E43AC19513BEC00DF7219 /* GSSpringLocation.m */,
+			);
+			path = "Managed Objects";
+			sourceTree = "<group>";
+		};
+		B00E43B319513FD500DF7219 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				B00E43B419513FF000DF7219 /* GSSpringLocation+MapKit.h */,
+				B00E43B519513FF000DF7219 /* GSSpringLocation+MapKit.m */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		B09188FA19512A34009C837D = {
 			isa = PBXGroup;
 			children = (
@@ -103,6 +151,7 @@
 		B091890519512A34009C837D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B00E43B119513F7200DF7219 /* MapKit.framework */,
 				B091890619512A34009C837D /* Foundation.framework */,
 				B091890819512A34009C837D /* CoreGraphics.framework */,
 				B091890A19512A34009C837D /* UIKit.framework */,
@@ -114,6 +163,7 @@
 		B091890C19512A34009C837D /* GeoSpring */ = {
 			isa = PBXGroup;
 			children = (
+				B091893E19512A5C009C837D /* Data */,
 				B091891519512A34009C837D /* GSAppDelegate.h */,
 				B091891619512A34009C837D /* GSAppDelegate.m */,
 				B091891819512A34009C837D /* Main_iPhone.storyboard */,
@@ -153,6 +203,20 @@
 				B091893119512A35009C837D /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B091893E19512A5C009C837D /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				B00E439B19512E0100DF7219 /* Managed Objects */,
+				B00E439819512DCD00DF7219 /* GSDataController.h */,
+				B00E439919512DCD00DF7219 /* GSDataController.m */,
+				B00E439519512D4C00DF7219 /* GSGeoJsonImporter.h */,
+				B00E439619512D4C00DF7219 /* GSGeoJsonImporter.m */,
+				B091894219512CE6009C837D /* springdata.json */,
+				B091893F19512A6A009C837D /* SpringData.xcdatamodeld */,
+			);
+			path = Data;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -235,6 +299,7 @@
 				B091891D19512A34009C837D /* Main_iPad.storyboard in Resources */,
 				B091892219512A34009C837D /* Images.xcassets in Resources */,
 				B091891A19512A34009C837D /* Main_iPhone.storyboard in Resources */,
+				B091894319512CE6009C837D /* springdata.json in Resources */,
 				B091891119512A34009C837D /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -254,9 +319,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B091894119512A6A009C837D /* SpringData.xcdatamodeld in Sources */,
+				B00E43B019513BEC00DF7219 /* GSCounty.m in Sources */,
+				B00E439A19512DCD00DF7219 /* GSDataController.m in Sources */,
+				B00E43AD19513BEC00DF7219 /* GSSpringLocation.m in Sources */,
 				B091891719512A34009C837D /* GSAppDelegate.m in Sources */,
+				B00E439719512D4C00DF7219 /* GSGeoJsonImporter.m in Sources */,
 				B091892019512A34009C837D /* GSViewController.m in Sources */,
 				B091891319512A34009C837D /* main.m in Sources */,
+				B00E43AA19513BEC00DF7219 /* GSBasin.m in Sources */,
+				B00E43B619513FF000DF7219 /* GSSpringLocation+MapKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -471,6 +543,7 @@
 				B091893A19512A35009C837D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		B091893B19512A35009C837D /* Build configuration list for PBXNativeTarget "GeoSpringTests" */ = {
 			isa = XCConfigurationList;
@@ -479,8 +552,22 @@
 				B091893D19512A35009C837D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		B091893F19512A6A009C837D /* SpringData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				B091894019512A6A009C837D /* SpringData.xcdatamodel */,
+			);
+			currentVersion = B091894019512A6A009C837D /* SpringData.xcdatamodel */;
+			path = SpringData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = B09188FB19512A34009C837D /* Project object */;
 }
