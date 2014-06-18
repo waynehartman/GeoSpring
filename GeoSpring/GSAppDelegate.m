@@ -23,7 +23,11 @@
     //  Open data should be in open formats... >_<
     NSString *path = [[NSBundle mainBundle] pathForResource:@"springdata" ofType:@"json"];
     self.dataImporter = [[GSGeoJsonImporter alloc] init];
-    [self.dataImporter importGeoJsonDataAtURL:[NSURL fileURLWithPath:path] withCompletionHandler:nil];
+
+    __weak typeof(self) weakSelf = self;
+    [self.dataImporter importGeoJsonDataAtURL:[NSURL fileURLWithPath:path] withCompletionHandler:^{
+        weakSelf.dataImporter = nil;
+    }];
 
     return YES;
 }
