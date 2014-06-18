@@ -16,12 +16,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="krb-gh-5m4">
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="krb-gh-5m4">
                                 <rect key="frame" x="0.0" y="0.0" width="768" height="1024"/>
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                             </mapView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="krb-gh-5m4" secondAttribute="bottom" id="2zT-o8-SkP"/>
+                            <constraint firstItem="krb-gh-5m4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-64" id="Q9r-sr-yLd"/>
+                            <constraint firstAttribute="trailing" secondItem="krb-gh-5m4" secondAttribute="trailing" id="Qlb-ah-eSt"/>
+                            <constraint firstItem="krb-gh-5m4" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="scI-pN-lHr"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Geo Spring" id="UKF-YU-Q5c"/>
                     <connections>
