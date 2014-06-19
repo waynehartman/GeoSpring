@@ -16,7 +16,7 @@
 }
 
 - (NSString *)title {
-    return self.name;
+    return self.name ?: @"<Unnamed Spring>";
 }
 
 - (NSString *)subtitle {

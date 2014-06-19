@@ -36,4 +36,6 @@ typedef void(^BasinMapper)(GSBasin *county);
 - (GSCounty *)countyWithRemoteId:(NSString *)remoteId inManagedObjectContext:(NSManagedObjectContext *)context;
 - (GSBasin *)basinWithRemoteId:(NSString *)remoteId inManagedObjectContext:(NSManagedObjectContext *)context;
 
+- (NSArray *)basinsInManagedObjectContext:(NSManagedObjectContext *)context;
+
 @end

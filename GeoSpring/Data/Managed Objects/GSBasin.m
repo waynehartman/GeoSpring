@@ -2,7 +2,7 @@
 //  GSBasin.m
 //  GeoSpring
 //
-//  Created by Wayne Hartman on 6/17/14.
+//  Created by Wayne Hartman on 6/19/14.
 //  Copyright (c) 2014 Wayne Hartman. All rights reserved.
 //
 
@@ -12,8 +12,10 @@
 
 @implementation GSBasin
 
-@dynamic remoteId;
 @dynamic name;
+@dynamic remoteId;
+@dynamic latitude;
+@dynamic longitude;
 @dynamic springs;
 
 @end

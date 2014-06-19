@@ -71,6 +71,10 @@ static GSDataController *singleton;
     return [results firstObject];
 }
 
+- (NSArray *)basinsInManagedObjectContext:(NSManagedObjectContext *)context {
+    return [self fetchEntitiesWithEntityClass:[GSBasin class] predicate:nil inManagedObjectContext:context];
+}
+
 #pragma mark - Reusable CRUD
 
 - (NSFetchedResultsController *)fetchedResultsControllerForClass:(Class)clazz predicate:(NSPredicate *)predicate sortDescriptors:(NSArray *)sortDescriptors sectionNameKeypath:(NSString *)keypath {

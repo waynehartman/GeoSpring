@@ -9,11 +9,11 @@
 /* Begin PBXBuildFile section */
 		B00E439719512D4C00DF7219 /* GSGeoJsonImporter.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E439619512D4C00DF7219 /* GSGeoJsonImporter.m */; };
 		B00E439A19512DCD00DF7219 /* GSDataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E439919512DCD00DF7219 /* GSDataController.m */; };
-		B00E43AA19513BEC00DF7219 /* GSBasin.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E43A919513BEC00DF7219 /* GSBasin.m */; };
 		B00E43AD19513BEC00DF7219 /* GSSpringLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E43AC19513BEC00DF7219 /* GSSpringLocation.m */; };
 		B00E43B019513BEC00DF7219 /* GSCounty.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E43AF19513BEC00DF7219 /* GSCounty.m */; };
 		B00E43B219513F7200DF7219 /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00E43B119513F7200DF7219 /* MapKit.framework */; };
 		B00E43B619513FF000DF7219 /* GSSpringLocation+MapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B00E43B519513FF000DF7219 /* GSSpringLocation+MapKit.m */; };
+		B00E43BB195256D100DF7219 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B00E43BA195256D100DF7219 /* CoreLocation.framework */; };
 		B091890719512A34009C837D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B091890619512A34009C837D /* Foundation.framework */; };
 		B091890919512A34009C837D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B091890819512A34009C837D /* CoreGraphics.framework */; };
 		B091890B19512A34009C837D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B091890A19512A34009C837D /* UIKit.framework */; };
@@ -31,6 +31,12 @@
 		B091893519512A35009C837D /* GeoSpringTests.m in Sources */ = {isa = PBXBuildFile; fileRef = B091893419512A35009C837D /* GeoSpringTests.m */; };
 		B091894119512A6A009C837D /* SpringData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = B091893F19512A6A009C837D /* SpringData.xcdatamodeld */; };
 		B091894319512CE6009C837D /* springdata.json in Resources */ = {isa = PBXBuildFile; fileRef = B091894219512CE6009C837D /* springdata.json */; };
+		B0FCBDC419528DB50099DCED /* GSBasin+MapKit.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FCBDC319528DB50099DCED /* GSBasin+MapKit.m */; };
+		B0FCBDCD195299550099DCED /* GSConvexHull.mm in Sources */ = {isa = PBXBuildFile; fileRef = B0FCBDCC195299550099DCED /* GSConvexHull.mm */; };
+		B0FCBDCF1952997C0099DCED /* ConvexHull2.cpp in Sources */ = {isa = PBXBuildFile; fileRef = B0FCBDCE1952997C0099DCED /* ConvexHull2.cpp */; };
+		B0FCBDD119529FFB0099DCED /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FCBDD019529FFB0099DCED /* libstdc++.dylib */; };
+		B0FCBDD51953A7790099DCED /* GSBasin.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FCBDD41953A7790099DCED /* GSBasin.m */; };
+		B0FCBDD71953A7C40099DCED /* Version1to2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = B0FCBDD61953A7C40099DCED /* Version1to2.xcmappingmodel */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +54,6 @@
 		B00E439619512D4C00DF7219 /* GSGeoJsonImporter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSGeoJsonImporter.m; sourceTree = "<group>"; };
 		B00E439819512DCD00DF7219 /* GSDataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSDataController.h; sourceTree = "<group>"; };
 		B00E439919512DCD00DF7219 /* GSDataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSDataController.m; sourceTree = "<group>"; };
-		B00E43A819513BEC00DF7219 /* GSBasin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBasin.h; sourceTree = "<group>"; };
-		B00E43A919513BEC00DF7219 /* GSBasin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBasin.m; sourceTree = "<group>"; };
 		B00E43AB19513BEC00DF7219 /* GSSpringLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSpringLocation.h; sourceTree = "<group>"; };
 		B00E43AC19513BEC00DF7219 /* GSSpringLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSpringLocation.m; sourceTree = "<group>"; };
 		B00E43AE19513BEC00DF7219 /* GSCounty.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSCounty.h; sourceTree = "<group>"; };
@@ -57,6 +61,7 @@
 		B00E43B119513F7200DF7219 /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		B00E43B419513FF000DF7219 /* GSSpringLocation+MapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GSSpringLocation+MapKit.h"; sourceTree = "<group>"; };
 		B00E43B519513FF000DF7219 /* GSSpringLocation+MapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GSSpringLocation+MapKit.m"; sourceTree = "<group>"; };
+		B00E43BA195256D100DF7219 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		B091890319512A34009C837D /* GeoSpring.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GeoSpring.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B091890619512A34009C837D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		B091890819512A34009C837D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -79,6 +84,16 @@
 		B091893419512A35009C837D /* GeoSpringTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GeoSpringTests.m; sourceTree = "<group>"; };
 		B091894019512A6A009C837D /* SpringData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SpringData.xcdatamodel; sourceTree = "<group>"; };
 		B091894219512CE6009C837D /* springdata.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = springdata.json; sourceTree = "<group>"; };
+		B0FCBDC219528DB50099DCED /* GSBasin+MapKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "GSBasin+MapKit.h"; sourceTree = "<group>"; };
+		B0FCBDC319528DB50099DCED /* GSBasin+MapKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "GSBasin+MapKit.m"; sourceTree = "<group>"; };
+		B0FCBDCB195299550099DCED /* GSConvexHull.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSConvexHull.h; sourceTree = "<group>"; };
+		B0FCBDCC195299550099DCED /* GSConvexHull.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = GSConvexHull.mm; sourceTree = "<group>"; };
+		B0FCBDCE1952997C0099DCED /* ConvexHull2.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ConvexHull2.cpp; sourceTree = "<group>"; };
+		B0FCBDD019529FFB0099DCED /* libstdc++.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = "libstdc++.dylib"; path = "usr/lib/libstdc++.dylib"; sourceTree = SDKROOT; };
+		B0FCBDD21953A5F10099DCED /* SpringData 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "SpringData 2.xcdatamodel"; sourceTree = "<group>"; };
+		B0FCBDD31953A7790099DCED /* GSBasin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBasin.h; sourceTree = "<group>"; };
+		B0FCBDD41953A7790099DCED /* GSBasin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBasin.m; sourceTree = "<group>"; };
+		B0FCBDD61953A7C40099DCED /* Version1to2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Version1to2.xcmappingmodel; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -86,6 +101,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0FCBDD119529FFB0099DCED /* libstdc++.dylib in Frameworks */,
+				B00E43BB195256D100DF7219 /* CoreLocation.framework in Frameworks */,
 				B00E43B219513F7200DF7219 /* MapKit.framework in Frameworks */,
 				B091890919512A34009C837D /* CoreGraphics.framework in Frameworks */,
 				B091890B19512A34009C837D /* UIKit.framework in Frameworks */,
@@ -110,8 +127,8 @@
 			isa = PBXGroup;
 			children = (
 				B00E43B319513FD500DF7219 /* Extensions */,
-				B00E43A819513BEC00DF7219 /* GSBasin.h */,
-				B00E43A919513BEC00DF7219 /* GSBasin.m */,
+				B0FCBDD31953A7790099DCED /* GSBasin.h */,
+				B0FCBDD41953A7790099DCED /* GSBasin.m */,
 				B00E43AE19513BEC00DF7219 /* GSCounty.h */,
 				B00E43AF19513BEC00DF7219 /* GSCounty.m */,
 				B00E43AB19513BEC00DF7219 /* GSSpringLocation.h */,
@@ -125,6 +142,8 @@
 			children = (
 				B00E43B419513FF000DF7219 /* GSSpringLocation+MapKit.h */,
 				B00E43B519513FF000DF7219 /* GSSpringLocation+MapKit.m */,
+				B0FCBDC219528DB50099DCED /* GSBasin+MapKit.h */,
+				B0FCBDC319528DB50099DCED /* GSBasin+MapKit.m */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -151,6 +170,8 @@
 		B091890519512A34009C837D /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				B0FCBDD019529FFB0099DCED /* libstdc++.dylib */,
+				B00E43BA195256D100DF7219 /* CoreLocation.framework */,
 				B00E43B119513F7200DF7219 /* MapKit.framework */,
 				B091890619512A34009C837D /* Foundation.framework */,
 				B091890819512A34009C837D /* CoreGraphics.framework */,
@@ -163,6 +184,7 @@
 		B091890C19512A34009C837D /* GeoSpring */ = {
 			isa = PBXGroup;
 			children = (
+				B0FCBDC71952979B0099DCED /* Utilities */,
 				B091893E19512A5C009C837D /* Data */,
 				B091891519512A34009C837D /* GSAppDelegate.h */,
 				B091891619512A34009C837D /* GSAppDelegate.m */,
@@ -215,8 +237,19 @@
 				B00E439619512D4C00DF7219 /* GSGeoJsonImporter.m */,
 				B091894219512CE6009C837D /* springdata.json */,
 				B091893F19512A6A009C837D /* SpringData.xcdatamodeld */,
+				B0FCBDD61953A7C40099DCED /* Version1to2.xcmappingmodel */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		B0FCBDC71952979B0099DCED /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				B0FCBDCB195299550099DCED /* GSConvexHull.h */,
+				B0FCBDCC195299550099DCED /* GSConvexHull.mm */,
+				B0FCBDCE1952997C0099DCED /* ConvexHull2.cpp */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -322,12 +355,16 @@
 				B091894119512A6A009C837D /* SpringData.xcdatamodeld in Sources */,
 				B00E43B019513BEC00DF7219 /* GSCounty.m in Sources */,
 				B00E439A19512DCD00DF7219 /* GSDataController.m in Sources */,
+				B0FCBDD51953A7790099DCED /* GSBasin.m in Sources */,
+				B0FCBDD71953A7C40099DCED /* Version1to2.xcmappingmodel in Sources */,
+				B0FCBDC419528DB50099DCED /* GSBasin+MapKit.m in Sources */,
+				B0FCBDCD195299550099DCED /* GSConvexHull.mm in Sources */,
 				B00E43AD19513BEC00DF7219 /* GSSpringLocation.m in Sources */,
 				B091891719512A34009C837D /* GSAppDelegate.m in Sources */,
+				B0FCBDCF1952997C0099DCED /* ConvexHull2.cpp in Sources */,
 				B00E439719512D4C00DF7219 /* GSGeoJsonImporter.m in Sources */,
 				B091892019512A34009C837D /* GSViewController.m in Sources */,
 				B091891319512A34009C837D /* main.m in Sources */,
-				B00E43AA19513BEC00DF7219 /* GSBasin.m in Sources */,
 				B00E43B619513FF000DF7219 /* GSSpringLocation+MapKit.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -560,9 +597,10 @@
 		B091893F19512A6A009C837D /* SpringData.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				B0FCBDD21953A5F10099DCED /* SpringData 2.xcdatamodel */,
 				B091894019512A6A009C837D /* SpringData.xcdatamodel */,
 			);
-			currentVersion = B091894019512A6A009C837D /* SpringData.xcdatamodel */;
+			currentVersion = B0FCBDD21953A5F10099DCED /* SpringData 2.xcdatamodel */;
 			path = SpringData.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

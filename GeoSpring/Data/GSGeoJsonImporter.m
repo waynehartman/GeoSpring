@@ -10,7 +10,7 @@
 #import "GSDataController.h"
 #import "GSCounty.h"
 #import "GSSpringLocation.h"
-#import "GSBasin.h"
+#import "GSBasin+MapKit.h"
 
 @implementation GSGeoJsonImporter
 
@@ -81,6 +81,14 @@
                     location = [dataController createSpringLocationWithMapper:locationMapper inManagedObjectContext:backgroundContext];
                 }
             }
+        }
+
+        NSArray *basins = [[GSDataController sharedDataController] basinsInManagedObjectContext:backgroundContext];
+
+        for (GSBasin *basin in basins) {
+            CLLocationCoordinate2D coordinate = [basin calculateCenterCoordinateFromHull];
+            basin.latitude = @(coordinate.latitude);
+            basin.longitude = @(coordinate.longitude);
         }
 
         [backgroundContext save:nil];
