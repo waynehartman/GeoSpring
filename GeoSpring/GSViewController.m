@@ -15,6 +15,9 @@
 #import "GSBasin+MapKit.h"
 #import "GSCounty.h"
 
+#import "GSSpringLocationDetailsViewController.h"
+#import "GSBasinDetailsViewController.h"
+
 @interface GSViewController () <NSFetchedResultsControllerDelegate, MKMapViewDelegate>
 
 @property (nonatomic, strong) IBOutlet MKMapView *mapView;
@@ -23,6 +26,9 @@
 @property (nonatomic, strong) NSPredicate *predicate;
 
 @end
+
+#define SEGUE_SPRING_DETAILS @"SEGUE_SPRING_DETAILS"
+#define SEGUE_BASIN_DETAILS @"SEGUE_BASIN_DETAILS"
 
 @implementation GSViewController
 
@@ -41,6 +47,27 @@
     }
 
     [self.mapView addAnnotations:[self.basinsFRC fetchedObjects]];
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    UIViewController *destinationViewController = nil;
+    
+    if ([segue.destinationViewController isKindOfClass:[UINavigationController class]]) {
+        UINavigationController *navController = segue.destinationViewController;
+        destinationViewController = navController.topViewController;
+    } else {
+        destinationViewController = segue.destinationViewController;
+    }
+    
+    destinationViewController.navigationItem.rightBarButtonItem = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemDone target:self action:@selector(dismissPresentedViewController:)];
+
+    if ([segue.identifier isEqualToString:SEGUE_BASIN_DETAILS]) {
+        GSBasinDetailsViewController *basinVC = (GSBasinDetailsViewController *)destinationViewController;
+        basinVC.basin = sender;
+    } else if ([segue.identifier isEqualToString:SEGUE_SPRING_DETAILS]) {
+        GSSpringLocationDetailsViewController *springVC = (GSSpringLocationDetailsViewController *)destinationViewController;
+        springVC.springLocation = sender;
+    }
 }
 
 - (NSFetchedResultsController *)basinsFRC {
@@ -63,6 +90,12 @@
     }
     
     return _locationsFRC;
+}
+
+#pragma mark - Actions
+
+- (void)dismissPresentedViewController:(id)sender {
+    [self dismissViewControllerAnimated:YES completion:NULL];
 }
 
 #pragma mark - MKMapViewDelegate
@@ -106,6 +139,7 @@
 
     annotationView.enabled = YES;
     annotationView.canShowCallout = YES;
+    annotationView.rightCalloutAccessoryView = [UIButton buttonWithType:UIButtonTypeDetailDisclosure];
     annotationView.annotation = annotation;
 
     if([annotation isKindOfClass:[GSBasin class]]) {
@@ -115,6 +149,16 @@
     }
 
     return annotationView;
+}
+
+- (void)mapView:(MKMapView *)mapView annotationView:(MKAnnotationView *)view calloutAccessoryControlTapped:(UIControl *)control {
+    id<MKAnnotation> annotation = view.annotation;
+
+    if ([annotation isKindOfClass:[GSBasin class]]) {
+        [self performSegueWithIdentifier:SEGUE_BASIN_DETAILS sender:annotation];
+    } else if ([annotation isKindOfClass:[GSSpringLocation class]]) {
+        [self performSegueWithIdentifier:SEGUE_SPRING_DETAILS sender:annotation];
+    }
 }
 
 #pragma mark - NSFetchedResultsControllerDelegate

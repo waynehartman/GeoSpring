@@ -20,8 +20,7 @@
 		B091891119512A34009C837D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B091890F19512A34009C837D /* InfoPlist.strings */; };
 		B091891319512A34009C837D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = B091891219512A34009C837D /* main.m */; };
 		B091891719512A34009C837D /* GSAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = B091891619512A34009C837D /* GSAppDelegate.m */; };
-		B091891A19512A34009C837D /* Main_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B091891819512A34009C837D /* Main_iPhone.storyboard */; };
-		B091891D19512A34009C837D /* Main_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B091891B19512A34009C837D /* Main_iPad.storyboard */; };
+		B091891D19512A34009C837D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B091891B19512A34009C837D /* Main.storyboard */; };
 		B091892019512A34009C837D /* GSViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B091891F19512A34009C837D /* GSViewController.m */; };
 		B091892219512A34009C837D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B091892119512A34009C837D /* Images.xcassets */; };
 		B091892919512A35009C837D /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B091892819512A35009C837D /* XCTest.framework */; };
@@ -37,6 +36,8 @@
 		B0FCBDD119529FFB0099DCED /* libstdc++.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = B0FCBDD019529FFB0099DCED /* libstdc++.dylib */; };
 		B0FCBDD51953A7790099DCED /* GSBasin.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FCBDD41953A7790099DCED /* GSBasin.m */; };
 		B0FCBDD71953A7C40099DCED /* Version1to2.xcmappingmodel in Sources */ = {isa = PBXBuildFile; fileRef = B0FCBDD61953A7C40099DCED /* Version1to2.xcmappingmodel */; };
+		B0FCBDDC1953B1490099DCED /* GSBasinDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FCBDDB1953B1490099DCED /* GSBasinDetailsViewController.m */; };
+		B0FCBDDF1953B16B0099DCED /* GSSpringLocationDetailsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B0FCBDDE1953B16B0099DCED /* GSSpringLocationDetailsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -72,8 +73,7 @@
 		B091891419512A34009C837D /* GeoSpring-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "GeoSpring-Prefix.pch"; sourceTree = "<group>"; };
 		B091891519512A34009C837D /* GSAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSAppDelegate.h; sourceTree = "<group>"; };
 		B091891619512A34009C837D /* GSAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSAppDelegate.m; sourceTree = "<group>"; };
-		B091891919512A34009C837D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPhone.storyboard; sourceTree = "<group>"; };
-		B091891C19512A34009C837D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main_iPad.storyboard; sourceTree = "<group>"; };
+		B091891C19512A34009C837D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B091891E19512A34009C837D /* GSViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GSViewController.h; sourceTree = "<group>"; };
 		B091891F19512A34009C837D /* GSViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GSViewController.m; sourceTree = "<group>"; };
 		B091892119512A34009C837D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
@@ -94,6 +94,10 @@
 		B0FCBDD31953A7790099DCED /* GSBasin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBasin.h; sourceTree = "<group>"; };
 		B0FCBDD41953A7790099DCED /* GSBasin.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBasin.m; sourceTree = "<group>"; };
 		B0FCBDD61953A7C40099DCED /* Version1to2.xcmappingmodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcmappingmodel; path = Version1to2.xcmappingmodel; sourceTree = "<group>"; };
+		B0FCBDDA1953B1490099DCED /* GSBasinDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSBasinDetailsViewController.h; sourceTree = "<group>"; };
+		B0FCBDDB1953B1490099DCED /* GSBasinDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSBasinDetailsViewController.m; sourceTree = "<group>"; };
+		B0FCBDDD1953B16B0099DCED /* GSSpringLocationDetailsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GSSpringLocationDetailsViewController.h; sourceTree = "<group>"; };
+		B0FCBDDE1953B16B0099DCED /* GSSpringLocationDetailsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GSSpringLocationDetailsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -184,12 +188,13 @@
 		B091890C19512A34009C837D /* GeoSpring */ = {
 			isa = PBXGroup;
 			children = (
+				B0FCBDD81953B1140099DCED /* Basin Details */,
+				B0FCBDD91953B1140099DCED /* Spring Details */,
 				B0FCBDC71952979B0099DCED /* Utilities */,
 				B091893E19512A5C009C837D /* Data */,
 				B091891519512A34009C837D /* GSAppDelegate.h */,
 				B091891619512A34009C837D /* GSAppDelegate.m */,
-				B091891819512A34009C837D /* Main_iPhone.storyboard */,
-				B091891B19512A34009C837D /* Main_iPad.storyboard */,
+				B091891B19512A34009C837D /* Main.storyboard */,
 				B091891E19512A34009C837D /* GSViewController.h */,
 				B091891F19512A34009C837D /* GSViewController.m */,
 				B091892119512A34009C837D /* Images.xcassets */,
@@ -250,6 +255,24 @@
 				B0FCBDCE1952997C0099DCED /* ConvexHull2.cpp */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		B0FCBDD81953B1140099DCED /* Basin Details */ = {
+			isa = PBXGroup;
+			children = (
+				B0FCBDDA1953B1490099DCED /* GSBasinDetailsViewController.h */,
+				B0FCBDDB1953B1490099DCED /* GSBasinDetailsViewController.m */,
+			);
+			path = "Basin Details";
+			sourceTree = "<group>";
+		};
+		B0FCBDD91953B1140099DCED /* Spring Details */ = {
+			isa = PBXGroup;
+			children = (
+				B0FCBDDD1953B16B0099DCED /* GSSpringLocationDetailsViewController.h */,
+				B0FCBDDE1953B16B0099DCED /* GSSpringLocationDetailsViewController.m */,
+			);
+			path = "Spring Details";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,9 +352,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B091891D19512A34009C837D /* Main_iPad.storyboard in Resources */,
+				B091891D19512A34009C837D /* Main.storyboard in Resources */,
 				B091892219512A34009C837D /* Images.xcassets in Resources */,
-				B091891A19512A34009C837D /* Main_iPhone.storyboard in Resources */,
 				B091894319512CE6009C837D /* springdata.json in Resources */,
 				B091891119512A34009C837D /* InfoPlist.strings in Resources */,
 			);
@@ -352,6 +374,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B0FCBDDC1953B1490099DCED /* GSBasinDetailsViewController.m in Sources */,
 				B091894119512A6A009C837D /* SpringData.xcdatamodeld in Sources */,
 				B00E43B019513BEC00DF7219 /* GSCounty.m in Sources */,
 				B00E439A19512DCD00DF7219 /* GSDataController.m in Sources */,
@@ -364,6 +387,7 @@
 				B0FCBDCF1952997C0099DCED /* ConvexHull2.cpp in Sources */,
 				B00E439719512D4C00DF7219 /* GSGeoJsonImporter.m in Sources */,
 				B091892019512A34009C837D /* GSViewController.m in Sources */,
+				B0FCBDDF1953B16B0099DCED /* GSSpringLocationDetailsViewController.m in Sources */,
 				B091891319512A34009C837D /* main.m in Sources */,
 				B00E43B619513FF000DF7219 /* GSSpringLocation+MapKit.m in Sources */,
 			);
@@ -396,20 +420,12 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		B091891819512A34009C837D /* Main_iPhone.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				B091891919512A34009C837D /* Base */,
-			);
-			name = Main_iPhone.storyboard;
-			sourceTree = "<group>";
-		};
-		B091891B19512A34009C837D /* Main_iPad.storyboard */ = {
+		B091891B19512A34009C837D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				B091891C19512A34009C837D /* Base */,
 			);
-			name = Main_iPad.storyboard;
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		B091893119512A35009C837D /* InfoPlist.strings */ = {
