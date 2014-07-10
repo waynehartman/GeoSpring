@@ -39,12 +39,7 @@
 
     [self.basinsFRC performFetch:nil];
     
-    for (GSBasin *basin in [self.basinsFRC fetchedObjects]) {
-        MKPolygon *polygon = basin.convexHullOfSpringLocations;
-        if (polygon) {
-            [self.mapView addOverlay:polygon];
-        }
-    }
+    [self updateOverlays];
 
     [self.mapView addAnnotations:[self.basinsFRC fetchedObjects]];
 }
@@ -90,6 +85,17 @@
     }
     
     return _locationsFRC;
+}
+
+- (void)updateOverlays {
+    [self.mapView removeOverlays:self.mapView.overlays];
+
+    for (GSBasin *basin in [self.basinsFRC fetchedObjects]) {
+        MKPolygon *polygon = basin.convexHullOfSpringLocations;
+        if (polygon) {
+            [self.mapView addOverlay:polygon];
+        }
+    }
 }
 
 #pragma mark - Actions
@@ -169,6 +175,7 @@
 
 - (void)controllerDidChangeContent:(NSFetchedResultsController *)controller {
     [[UIApplication sharedApplication] setNetworkActivityIndicatorVisible:NO];
+    [self updateOverlays];
 }
 
 - (void)controller:(NSFetchedResultsController *)controller didChangeObject:(id)anObject atIndexPath:(NSIndexPath *)indexPath forChangeType:(NSFetchedResultsChangeType)type newIndexPath:(NSIndexPath *)newIndexPath
